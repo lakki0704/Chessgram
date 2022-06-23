@@ -8,12 +8,32 @@
     <meta charset="UTF-8">
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
     <link rel="stylesheet" href="./style.css">
+
+
 
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Chessgram</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+
+                <li><a href="/">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <br><br>
     <!-- partial:index.partial.html -->
+
     <div class="option-nav">
         <div id="player-nav">
             Player: <span id="player"></span>
@@ -35,16 +55,7 @@
             <span id="knight" class="option"></span>
             <span id="bishop" class="option"></span>
         </div>
-        <div id="option-menu" class="hide">
-            <div id="back-btn" class="button">BACK</div>
-            <div id="theme-menu">
-                THEME: <span id="theme-option" class="button"></span>
-            </div>
-            <div id="color-menu">
-                COLOR: <span id="color-option" class="button"></span>
-            </div>
-            <div id="restart-btn" class="button">NEW GAME</div>
-        </div>
+
         <div id="game" ng-app="myApp" ng-controller="GameController">
             <div class="row" ng-repeat="y in widths">
                 <div class="box" ng-repeat="x in widths" ng-attr-id="{{'box-' + x + '-' + y}}" piece="">
@@ -52,6 +63,19 @@
             </div>
         </div>
     </div>
+
+    <div id="option-menu" class="hide text-center">
+        <div id="back-btn" class="button options2">BACK</div>
+        <div id="theme-menu" class="options2">
+            THEME: <span id="theme-option" class="button"></span>
+        </div>
+        <div id="color-menu" class="options2">
+            COLOR: <span id="color-option" class="button"></span>
+        </div>
+        <div id="restart-btn" class="button options2">NEW GAME</div>
+    </div>
+
+
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>

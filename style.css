@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    width: 580px;
-    margin: 10px auto;
+    /* width: 580px; */
+    margin: auto;
 }
 
 
@@ -235,7 +235,7 @@ body {
     #option-menu {
         width: 320px;
         height: 320px;
-        font-size: 26px;
+        font-size: 1em;
     }
     #back-btn {
         margin-top: 25px;
@@ -271,4 +271,68 @@ body {
         font-size: 60px;
         line-height: 320px;
     }
+}
+
+.options2 {
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(1, 23, 23);
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 32px;
+}
+
+
+/* NAVBAR MENU */
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.text-center {
+    margin-left: auto;
+    margin-right: auto;
 }
